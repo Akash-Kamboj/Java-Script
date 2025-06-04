@@ -11,3 +11,4 @@ rollno = "1002";
 city = "Los Angeles";
 
 console.table([{ age }, { rollno }, { city }, { gender }]);
+
