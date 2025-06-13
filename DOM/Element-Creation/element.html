@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="color: white; background-color: black; text-align: center;">
+    <script>
+        let div = document.createElement('div');
+        console.log(div);
+        div.className = "main";
+        div.id = "mainid";
+        div.style.color = "red";
+        div.style.backgroundColor = "white";
+        div.style.width = "300px";
+        div.style.margin = "auto";
+        div.style.fontSize = "50px";
+        let data = div.innerHTML = "Hello World";
+        console.log(data); 
+
+        document.body.appendChild(div);
+
+    </script>
+</body>
+
+</html>
