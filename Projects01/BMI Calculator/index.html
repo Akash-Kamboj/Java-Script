@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <style>
+        body{
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        form{
+            background-color: #afccd8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        #height, #weight{
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+       
+        button{
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #weight-guide{
+            margin-top: 20px;
+            background-color: #c7e4e7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        #underweight{
+            background-color: red;
+            color: white;
+            border-radius: 20px;
+        }
+         #normal-weight{
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+        }
+        #overweight{
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+       
+        
+        
+        #result{
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <form action="">
+                <p><label for="">Height in CM: </label><input type="text" id="height" name="height" required></p>
+                <p><label for="">Weight in KG: </label><input type="text" id="weight" name="weight" required></p>
+                <button type="submit">Calculate BMI</button>
+
+                <div id="result">Result ? <span id="bmi-value"></span></div>
+
+                <div id="weight-guide">
+                    <h3>BMI Weight Guide</h3>
+                    <p id="underweight">Underweight: Less than 18.5</p>
+                    <p id="normal-weight">Normal weight: 18.5 - 24.9</p>
+                    <p id="overweight">Overweight: 25 - 29.9</p>
+
+                </div>
+            </form>
+        </div>
+
+    </center>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
